@@ -1,14 +1,9 @@
-pub fn add(left: u64, right: u64) -> u64 {
-    left + right
-}
-
 #[cfg(test)]
 mod tests {
-    use super::*;
+    use yaqoi::QoiHeader;
 
     #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
+    fn qoi_header_size() {
+        assert_eq!(size_of::<QoiHeader>(), 14); // Header should be 14 bytes long.
     }
 }

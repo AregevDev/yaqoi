@@ -1,5 +1,5 @@
-pub const QOI_MAGIC: [u8; 4] = [b'q', b'o', b'i', b'f'];
-pub const QOI_ENDER: [u8; 8] = [0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x01];
+pub const MAGIC_BYTES: [u8; 4] = [b'q', b'o', b'i', b'f'];
+pub const ENDER_MARKER: [u8; 8] = [0, 0, 0, 0, 0, 0, 0, 1];
 
 #[derive(Debug, Default, Copy, Clone)]
 pub enum QoiChannels {
